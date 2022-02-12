@@ -1,5 +1,10 @@
-# Compiled class file
+# Build output
 *.class
+target
+dependency-reduced-pom.xml
+
+# IDE
+.idea
 
 # Log file
 *.log
