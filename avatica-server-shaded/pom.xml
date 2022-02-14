@@ -9,7 +9,7 @@
         <artifactId>calcite-shaded</artifactId>
         <version>1.29.0-druid-shaded</version>
     </parent>
-    <version>1.29.0-druid-shaded</version>
+    <version>1.20.0-druid-shaded</version>
 
     <groupId>org.apache.calcite.avatica</groupId>
     <artifactId>avatica-server-shaded</artifactId>

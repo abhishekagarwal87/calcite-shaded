@@ -29,10 +29,6 @@
 
   <modules>
     <module>calcite-core-shaded</module>
-    <module>calcite-linq4j-shaded</module>
-    <module>avatica-shaded</module>
-    <module>avatica-core-shaded</module>
-    <module>avatica-metrics-shaded</module>
     <module>avatica-server-shaded</module>
     <module>calcite-testkit-shaded</module>
   </modules>
@@ -58,7 +54,7 @@
                 <artifactSet>
                   <includes>
                     <include>org.apache.calcite:${calciteArtifact}</include>
-                    <include>com.google.guava:guava</include>
+                    <include>com.google.guava:*</include>
                   </includes>
                 </artifactSet>
                 <filters>
@@ -76,6 +72,9 @@
                   </relocation>
                 </relocations>
                 <createDependencyReducedPom>true</createDependencyReducedPom>
+                <shadeSourcesContent>true</shadeSourcesContent>
+                <createSourcesJar>true</createSourcesJar>
+                <createTestSourcesJar>true</createTestSourcesJar>
               </configuration>
             </execution>
           </executions>
